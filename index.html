@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> BChoice - Choose the Best!  </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.js') }}">
+    // <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+	<!-- <link rel="stylesheet" href="vendor/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <script src="{{ url_for('static', filename='index.js') }}"></script>   
+
+</head>
+<body>
+    <div class="logovamenu ">
+		<nav class="navbar navbar-light">
+			<div class="container">    	
+				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mtren">
+
+				</button>
+				<div class="collapse navbar-toggleable-xs   " id="mtren">
+					<a class="navbar-brand text-xs-center text-sm-left"  alt="">BChoice</a>
+
+					<ul class="nav navbar-nav float-sm-right">
+						<li class="nav-item active">
+							<a class="nav-link " href="#">Home  </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="">About us</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="">Contact</a>
+						</li>
+                    </ul>
+				</div>
+			</div> <!-- het container -->
+		</nav>
+    </div> <!-- het logovamenu -->
+    	<div class="banner">
+            <div class="chu">
+                <h1>CHOOSE THE BEST !
+                <p >We provide the best services for you</p>
+                <a href="/food-expect" class="btn btn-success">Start your choice</a>
+            </div>
+            <img src="{{url_for('static', filename='slide02.jpg')}}" />	
+		</div> <!-- het banner -->
+    <div class="aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center wow fadeInDown">
+                    <h1>Our Website</h1>
+                </div>
+                <span class="ke"></span>
+                <div class="col-xs-6 push-xs-3 text-xs-center wow fadeInUp">
+                        <ul>
+                            You wake up and have no idea what you are going to eat?<br>
+                            You hang out with your friends but dont know where to go?<br>
+                            You are starving but still stucking in billions of choices for food at night?<br>
+                            Don’t worry, just answering then let’s BChoice do your work. <br>
+                            </ul>
+                </div>
+            </div>
+        </div>
+        <a id="button"><i class="fas fa-sort-up"></i></a>
+    </div>
+    <div class="ourteam">
+        <div class="container">
+            <div class="row" >
+                <div class="col-sm-12 text-xs-center team wow fadeInDown">
+                    <h1>Our Team</h1>
+                </div>
+                <div class="col-xs-6 push-xs-3 text-xs-center gt wow fadeInUp">
+                    <p>BCHoice team is established by 3 members of class "Code For Everyone 24" in Techkids coding school. We_ The co-founders of BChoice, with the same passion for coding and the same goal is to give you,our dearly users,the best service, wish you the happiness and satisfaction while using our website!</p>
+                </div>
+            </div>
+            <div class="row" 
+            style="display: flex;
+            justify-content: center;"
+        >
+                    <div class="col-xs-3 text-xs-center intro">
+                        <img src="{{url_for('static', filename='khanh.jpg')}}" />
+                        <h5>Nguyen Khanh</h5>
+                        <p>1999 <br>
+                            Sophomore at Bach Khoa university
+                        </p>
+                    </div>
+                    <div class="col-xs-3 text-xs-center intro">
+                        <img src="{{url_for('static', filename='3.jpg')}}" />
+                        <h5>Hong Van</h5>
+                        <p> 1993 <br>
+                            Working at Canon company</p>
+                    </div>
+                    <div class="col-xs-3 text-xs-center intro">
+                        <img src="{{url_for('static', filename='4.jpg')}}" />
+                        <h5>Tran Tung</h5>
+                        <p> 1995 <br>
+                            Working at TechComBank</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div id="slidehome" class="carousel slide slidecon" data-ride="carousel" data-interval="5000">
+               <ol class="carousel-indicators">
+                   <li data-target="#slidehome" data-slide-to="0" class="active"></li>
+                   <li data-target="#slidehome" data-slide-to="1"></li>
+               </ol>
+               <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                            <div class="instagram">
+                                    <div class="container">
+                                        <div class="row img_insta">
+                                                <div class="col-xs-3">
+                                                    <img src="https://scontent.cdninstagram.com/vp/f02733812633ccc8c8eb8eac3b50922d/5CE7CCFF/t51.2885-15/e35/s320x320/43984710_574166249685325_5681720559545801579_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <img src="https://scontent.cdninstagram.com/vp/a88a2020d9a6dbb0fd6e816dba2a2ee6/5CEE4AE5/t51.2885-15/e35/s320x320/44372652_1807284399349014_340499354337317766_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <img src="https://scontent.cdninstagram.com/vp/ef956d44403d45c877cec0d3ab81ddeb/5CEDA589/t51.2885-15/e35/s320x320/43175526_259046218144403_2775260800368045643_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="">
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <img src="https://scontent.cdninstagram.com/vp/f2c05f5769055ebc35edca3cc29c6054/5CF8A57F/t51.2885-15/e35/s320x320/44192273_733427280350148_2298189278762317132_n.jpg?_nc_ht=scontent.cdninstagram.com" alt="">
+                                                </div>
+                                        </div>
+                                    </div>                                
+                            </div>
+                        </div> 
+                   <div class="carousel-item">      
+                        <div class="instagram">
+                            <div class="container">
+                                <div class="row img_insta">
+                                        <div class="col-xs-3">
+                                            <img src="{{url_for('static', filename='dau.jpg')}}" alt="">
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <img src="{{url_for('static', filename='dao.jpg')}}" alt="">
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <img src="{{url_for('static', filename='dia.jpg')}}" alt="">
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <img src="{{url_for('static', filename='rau.jpg')}}" alt="">
+                                        </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                  
+                    <!-- het item -->
+               </div>
+           </div>
+        </div> <!-- het slide  -->
+    <div class="contactt">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 info">
+                        <div class="info1">
+                                <ul>
+                                        <li>
+                                            <h1>Contact Info</h1>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span class="adr">Address: Đại Học Bách Khoa Hà Nội<br>1 Đại Cồ Việt,<br>quận Hai Bà Trưng, Hà Nội</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <span class="phone">Phone: +84 342614480</span>
+                                        </li>
+                                        <li>
+                                            <i class="far fa-envelope"></i>
+                                            <span class="mail">Mail: endee1106@gmail.com</span>
+                                        </li>
+                                    </ul>
+                        </div>
+                        <div class="social">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14897.142147460485!2d105.81566100000002!3d21.021258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x722d605f919c37a5!2zMjIgVGjDoG5oIEPDtG5nLCBCYSDEkMOsbmgsIEjDoCBO4buZaQ!5e0!3m2!1svi!2sus!4v1548594163694" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </div>
+        <div class="footerr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 brand">
+                            <p>Copyright 2019 BChoice, All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
