@@ -1,0 +1,626 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.suggest {
+    margin-bottom: 40px;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+    
+
+/* logovamenu */
+
+/* .logovamenu{
+    height: 70%;
+    width: 100%;
+    margin-bottom: 119px;
+} */
+
+   
+#button {
+    background:red;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 5px;
+    padding: 9px;
+    font-size: 21px;
+    z-index: 1000;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+a.navbar-brand.text-xs-center.text-sm-left {
+    color: red;
+    font-family: 'Megrim', cursive;
+    font-size: 60px;
+}
+
+.logovamenu a.nav-link, .logovamenu1 a.nav-link {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 77px;
+    color: black;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.chu {
+    position: absolute;
+    color: white;
+    margin-left: 6%;
+    padding-top: 157px;
+}
+
+
+.chu h1 {
+    font-size: 50px;
+}
+
+.chu p {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+a.btn.btn-success {
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0;
+    border-radius: 0;
+    background: red;
+    border-color: red;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+.banner {
+    background-size: cover;
+}
+
+.thanhmenu {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+
+/* het logovamenu */
+
+
+/* aboutus */
+
+.aboutus {
+    padding: 55px;
+    color: #403e3e;
+}
+
+.aboutus h1 {
+    font-size: 45px;
+    color: #555555;
+    position: relative;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.aboutus h1:after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: red;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+}
+
+    
+.aboutus ul {
+    color: #252323;
+    padding-top: 15px;
+    font-weight: 300;
+}
+
+/* hetaboutus */
+
+
+/* ourteam */
+
+.ourteam {
+    overflow: hidden;
+    background: #0d0d0d;
+    padding: 40px 0;
+    color: white;
+}
+
+.team h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+    position: relative;
+    font-weight: 300;
+}
+
+.team h1:after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: red;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+}
+
+.ourteam img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.gt p {
+    padding-bottom: 45px;
+    color: #888282;
+    font-size: 16px;
+    padding-top: 14px;
+    font-weight: 300;
+}
+    
+
+.intro h5 {
+    padding-top: 19px;
+}
+
+
+
+/* hetourteam */
+
+/* insta */
+
+.instagram {
+    margin: 80px 0 80px 0;
+}
+
+.instagram img {
+    width: 100%;
+    height: 255px;
+}
+
+/* hetinsta */
+
+
+/* contact */
+
+.info1 {
+    margin-top: 55px;
+    padding-left: 75px;
+}
+
+.social {
+    padding-inline-start: 75px;
+}
+
+.social i {
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 6px;
+    margin-right: 8px;
+}
+
+.social i.fab.fa-google-plus-g {
+    padding: 6px 4px;
+}
+
+.social i.fab.fa-instagram {
+    padding: 6px 8px;
+}
+
+.social i.fab.fa-facebook-f {
+    padding: 6px 11px;
+}
+
+.contactt li {
+    padding-bottom: 15px;
+}
+
+
+.contactt h1 {
+    color: white;
+    line-height: 1.3;
+}
+
+.contactt ul {
+    list-style: none;
+}
+
+.contactt {
+    background: #0e0e0e;
+    height: 400px;
+    color: #dacece;
+    font-size: .9em;
+    overflow: hidden;
+}
+
+.col-xs-12.col-sm-6.map {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
+
+.map iframe {
+    width: 616.5px;
+    height: 400px;
+}
+
+ 
+i.far.fa-envelope {
+    padding-right: 9px;
+    color: red;
+}
+
+.contactt i.fas {
+    padding-right: 20px;
+    float: left;
+    margin-top: 4px;
+    color: red;
+}
+
+i.fas.fa-sort-up {
+    color: black;
+    padding-left: 3px;
+}
+
+/* hetcontact */
+
+
+/* footer */
+
+.footerr {
+    height: 10%;
+    width: 100%;
+}
+
+.footerr p {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* hetfooter */
+
+/* root */
+
+.searching {
+    padding: 20px;
+    background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: 20px;
+    /* background-color: rgba(280,280,280,0.5); */
+    transform: rotateY(-180deg);
+    margin-top: 27px;
+}
+
+/* #root {
+    padding: 20px;
+    width: 100%;
+} */
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+
+label {
+    color: black;
+}
+
+/* .form_label {
+    min-width: 70px;
+    display: inline-block;
+} */
+
+.inp_1 {
+    margin-bottom: 16px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+
+#btn_search {
+    width: 50%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 29px 0;
+    border-color: black;
+    border-radius: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    float: right;
+}
+
+/* hetroot */
+
+
+/* suggest */
+
+.tieude {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 60px 0 30px 0;
+    color: #555555;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+h1.tieude:after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: red;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+}
+
+.suggest img {
+    width: 100%;
+    height: 173px;
+    border-bottom: 3px solid #fd8282;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.suggest .col-sm-4 {
+    padding-bottom: 25px;
+}
+
+.nen {
+    border: 1px solid #edeaea;
+    height: 300px;
+}
+
+.suggest h5.address {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #7b7a7a;
+}
+
+.suggest h5.name {
+    font-size: 17px;
+    margin: 6px 0;
+    color: #333333;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 13px;
+}
+
+.nen h5 {
+    padding-left: 15px;
+}
+
+/* hetsuggest */
+
+
+@media (max-width:576px){
+    *{}
+
+.thanhmenu {
+    border-bottom: none;
+}
+
+.logovamenu1 {
+    margin-bottom: 0;
+}
+
+.social {
+    margin-bottom: 36px;
+}
+
+.info1 {margin-top: 15px;}
+
+.contactt {
+    height: 625px;
+}
+
+iframe {
+    height: 300px !important;
+}
+
+.instagram {
+    margin: 40px 0 40px 0;
+}
+
+.instagram img {
+    height: 64px;
+}
+
+.intro p {
+    font-size: 11px !important;
+}
+
+.intro h5 {
+    font-size: 11px;
+}
+
+.ourteam p {
+    font-size: 14px;
+}
+
+.ourteam img {
+    width: 70px;
+    height: 70px;
+}
+
+.ourteam h1 {
+    font-size: 26px;
+}
+
+.ourteam h1:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: red;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -18px;
+}
+
+.ourteam {
+    padding: 20px 0;
+}
+
+.aboutus ul {
+    font-size: 14px;
+}
+
+.aboutus h1 {
+    font-size: 26px;
+}
+
+.aboutus h1:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: red;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -18px;
+}
+
+.aboutus {
+    padding: 0;
+}
+
+.banner {
+    height: 127px;
+}
+
+.chu p {
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+.chu h1 {
+    font-size: 20px;
+    padding-top: 22px;
+}
+
+a.btn.btn-success {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 9px;
+}
+
+.chu {
+    padding: 0;
+}
+
+a.nav-link {
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid gray;
+}
+}
+
+@media (min-width: 576px) and (max-width:750px){
+    *{}
+
+button#btn_search {
+    height: 45px;
+    font-size: 15px;
+    padding: 1px;
+}
+
+div#root {
+    margin-left: -38px;
+    width: 249px;
+}
+
+.ourteam h5 {
+    font-size: 19px;
+}
+
+.chu h1 {
+    font-size: 37px;
+}
+
+.chu p {
+    font-size: 27px;
+}
+
+.nen {
+    height: 350px;
+}
+
+.footerr .brand {
+    width: 600px !important;
+}
+
+.instagram {
+    margin: 40px 0 40px 0;
+}
+
+.info1, .social {margin-left: 34px;}
+
+.instagram img {
+    height: 105px;
+}
+
+.chu {
+    padding: 0;
+    margin-top: 53px;
+}
+}
