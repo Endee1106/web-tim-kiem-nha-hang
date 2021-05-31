@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> BChoice - Choose the Best!  </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.js') }}">
+    // <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+	<!-- <link rel="stylesheet" href="vendor/bootstrap.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <script src="{{ url_for('static', filename='index.js') }}"></script>   
+
+</head>
+<body>
+    <div class="logovamenu1 ">
+		<nav class="navbar navbar-light thanhmenu">
+			<div class="container">    	
+				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mtren">
+
+				</button>
+				<div class="collapse navbar-toggleable-xs   " id="mtren">
+					<a class="navbar-brand text-xs-center text-sm-left"  alt="">BChoice</a>
+
+					<ul class="nav navbar-nav float-sm-right">
+						<li class="nav-item active">
+							<a class="nav-link " href="/index">Home  </a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="">Contact</a>
+						</li>
+                    </ul>
+				</div>
+			</div> <!-- het container -->
+		</nav>
+    </div> <!-- het logovamenu -->
+    <div class="suggest">
+        <div class="container">
+           <div class="row">
+                    <h1 class="col-sm-12 text-xs-center tieude">This is a few suggestions for you</h1>
+            </div> 
+            <div class="row">
+                {% for show_data_con in item_list_con %}
+                <div class="col-sm-4">
+                    <div class="nen">
+                        <img src="{{ show_data_con.image }}" alt="">
+                        <h5 class="name">{{ show_data_con.name }}</h5>
+                        <h5 class="address">{{ show_data_con.address }}</h5>
+                    </div>
+                    <!-- <span class="rate">{{ show_data_con.rate }}<i class="fas fa-star"></i></span> -->
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <a id="button"><i class="fas fa-sort-up"></i></a>
+    </div>
+    <div class="contactt">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 info">
+                <div class="info1">
+                        <ul>
+                                <li>
+                                    <h1>Contact Info</h1>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="adr">Address: Đại Học Bách Khoa<br>số 1 Đại Cồ Việt<br>quận Hai Bà Trưng, Hà Nội</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="phone">Phone: +84 66 468 782</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    <span class="mail">Mail: caotruongson98765@gmail.com</span>
+                                </li>
+                            </ul>
+                </div>
+                <div class="social">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14897.142147460485!2d105.81566100000002!3d21.021258!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x722d605f919c37a5!2zMjIgVGjDoG5oIEPDtG5nLCBCYSDEkMOsbmgsIEjDoCBO4buZaQ!5e0!3m2!1svi!2sus!4v1548594163694" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+</div>
+<div class="footerr">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 brand">
+                    <p>Copyright 2019 BChoice, All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
